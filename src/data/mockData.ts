@@ -1,4 +1,24 @@
 import { Category, Product, ConsultationService, Store, HealthCondition, Brand, Review } from '@/types';
+import simpleLightMoisturiser from "@/assets/products/simple-light-moisturiser.jpg";
+import simpleCleansingLotion from "@/assets/products/simple-purifying-cleansing-lotion.jpg";
+import vitaminCFoam from "@/assets/products/vitamin-c-cleansing-foam.jpg";
+import garnierCharcoal from "@/assets/products/garnier-3in1-charcoal.jpg";
+import garnierClay from "@/assets/products/garnier-3in1-clay.jpg";
+import aveenoOil from "@/assets/products/aveeno-creamy-oil.jpg";
+import ceraveVitaminC from "@/assets/products/cerave-vitamin-c.jpg";
+import laRocheC10 from "@/assets/products/laroche-vitamin-c10.jpg";
+import maryMayEye from "@/assets/products/mary-may-eye-cream.jpg";
+import epimolB from "@/assets/products/epimol-b-baby.jpg";
+import babyDove from "@/assets/products/baby-dove-sensitive.jpg";
+import niveaSpf50 from "@/assets/products/nivea-spf50.jpg";
+import simpleToner from "@/assets/products/simple-toner.jpg";
+import anuaToner from "@/assets/products/anua-soothing-toner.jpg";
+import malibuSpf30 from "@/assets/products/malibu-spf30.jpg";
+import drAlthea345 from "@/assets/products/dr-althea-345.jpg";
+import epimolEBar from "@/assets/products/epimol-e-bar.jpg";
+import doveBar from "@/assets/products/dove-bar.jpg";
+import perobar25 from "@/assets/products/perobar-2.5.jpg";
+import perobar5 from "@/assets/products/perobar-5.jpg";
 
 // Categories with subcategories - Skin Care & Dermatology is the MAIN category
 export const categories: Category[] = [
@@ -193,130 +213,560 @@ const sampleReviews: Review[] = [
 
 // Mock Products with expanded catalog - using reliable Unsplash images
 export const products: Product[] = [
-  // Skincare Products
+  // 1 Simple Light Moisturiser
   {
-    id: 'p1',
-    name: 'CeraVe Hydrating Cleanser',
-    brand: 'CeraVe',
-    category: 'skincare',
-    subcategory: 'cleansers',
-    price: 1450,
-    image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop',
+    id: "p1",
+    name: "Simple Kind to Skin Hydrating Light Moisturiser",
+    brand: "Simple",
+    category: "skincare",
+    subcategory: "moisturizers",
+    price: 1250,
+    image: simpleLightMoisturiser,
     images: [
-      'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&h=800&fit=crop',
-      'https://images.unsplash.com/photo-1570194065650-d99fb4b38b33?w=800&h=800&fit=crop',
-      'https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=800&h=800&fit=crop',
+      simpleLightMoisturiser
     ],
-    description: 'Gentle hydrating cleanser for normal to dry skin with ceramides and hyaluronic acid.',
-    fullDescription: 'CeraVe Hydrating Cleanser is developed with dermatologists for normal to dry skin. This gentle, non-foaming cleanser features three essential ceramides (1, 3, 6-II) that help restore and maintain the skin\'s natural barrier. MVE Technology provides controlled release of ingredients for 24-hour hydration.',
-    ingredients: 'Aqua/Water, Glycerin, Cetearyl Alcohol, Phenoxyethanol, Stearyl Alcohol, Cetyl Alcohol, PEG-40 Stearate, Ceramide NP, Ceramide AP, Ceramide EOP',
-    howToUse: 'Wet skin with lukewarm water. Massage cleanser onto skin in a gentle, circular motion. Rinse thoroughly. Pat dry.',
-    warnings: 'For external use only. Avoid contact with eyes.',
+    description: "Lightweight daily moisturiser with Pro‑Vitamin B5 and Vitamin E. Provides up to 12 h hydration and is ideal for sensitive skin. :contentReference[oaicite:0]{index=0}",
+    fullDescription:
+      "Simple Kind to Skin Hydrating Light Moisturiser nourishes and softens skin with Pro‑Vitamin B5, Vitamin E and Bisabolol. Hypoallergenic and free from artificial perfume, color and harsh chemicals. :contentReference[oaicite:1]{index=1}",
+    ingredients: "Aqua/Water, Glycerin, Pro‑Vitamin B5, Vitamin E, Bisabolol, Borage Seed Oil",
+    howToUse: "Apply to cleansed skin morning and night.",
+    warnings: "For external use only. Avoid eye contact.",
     inStock: true,
     isPrescriptionRequired: false,
-    rating: 4.8,
-    reviewCount: 234,
-    tags: ['bestseller', 'gentle'],
-    skinType: ['dry', 'normal', 'sensitive'],
+    rating: 4.5,
+    reviewCount: 840,
+    tags: ["hydrating", "sensitive-skin", "daily", "bestseller"],
+    skinType: ["all", "sensitive"],
     reviews: sampleReviews,
   },
+
+  // 2 Simple Purifying Cleansing Lotion
   {
-    id: 'p2',
-    name: 'La Roche-Posay Anthelios SPF 50+',
-    brand: 'La Roche-Posay',
-    category: 'skincare',
-    subcategory: 'sunscreens',
-    price: 2850,
-    image: 'https://images.unsplash.com/photo-1556228841-a3c527ebefe5?w=400&h=400&fit=crop',
+    id: "p2",
+    name: "Simple Purifying Cleansing Lotion",
+    brand: "Simple",
+    category: "skincare",
+    subcategory: "cleansers",
+    price: 1050,
+    image: simpleCleansingLotion,
     images: [
-      'https://images.unsplash.com/photo-1556228841-a3c527ebefe5?w=800&h=800&fit=crop',
-      'https://images.unsplash.com/photo-1526947425960-945c6e72858f?w=800&h=800&fit=crop',
+      simpleCleansingLotion,
     ],
-    description: 'Ultra-light sunscreen with very high protection for sensitive skin.',
-    fullDescription: 'La Roche-Posay Anthelios Ultra-Light Invisible Fluid SPF 50+ provides very high broad spectrum UVA/UVB protection with an ultra-light, non-greasy texture.',
-    ingredients: 'Aqua/Water, Alcohol Denat., Diisopropyl Sebacate, Silica, Glycerin',
-    howToUse: 'Apply generously 15 minutes before sun exposure. Reapply every 2 hours.',
-    warnings: 'Avoid eye area. Not suitable for children under 3 years.',
+    description: "Gentle cleansing lotion that removes makeup and impurities without irritating sensitive skin.",
+    fullDescription:
+      "Simple Purifying Cleansing Lotion cleanses deeply while maintaining skin’s natural moisture balance. Alcohol‑free and hypoallergenic.",
+    ingredients: "Aqua/Water, Glycerin, Chamomile Extract, Allantoin",
+    howToUse: "Apply to dry or damp skin and wipe off.",
+    warnings: "Avoid eye area.",
     inStock: true,
     isPrescriptionRequired: false,
-    rating: 4.9,
-    reviewCount: 456,
-    tags: ['bestseller', 'dermatologist-recommended'],
-    skinType: ['all'],
+    rating: 4.4,
+    reviewCount: 680,
+    tags: ["gentle", "sensitive-skin"],
+    skinType: ["sensitive", "normal"],
     reviews: sampleReviews,
   },
+
+  // 3 Vitamin C Cleansing Foam
   {
-    id: 'p3',
-    name: 'The Ordinary Niacinamide 10%',
-    brand: 'The Ordinary',
-    category: 'skincare',
-    subcategory: 'serums',
-    price: 950,
-    image: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop',
+    id: "p3",
+    name: "Vitamin C Cleansing Foam",
+    brand: "Unknown",
+    category: "skincare",
+    subcategory: "cleansers",
+    price: 1150,
+    image: vitaminCFoam,
     images: [
-      'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=800&h=800&fit=crop',
-      'https://images.unsplash.com/photo-1617897903246-719242758050?w=800&h=800&fit=crop',
+      vitaminCFoam,
     ],
-    description: 'High-strength vitamin and mineral blemish formula for congested skin.',
-    fullDescription: 'Niacinamide (Vitamin B3) is indicated to reduce the appearance of skin blemishes and congestion. A high 10% concentration of this vitamin is supported by zinc.',
-    ingredients: 'Aqua, Niacinamide, Pentylene Glycol, Zinc PCA, Dimethyl Isosorbide',
-    howToUse: 'Apply a few drops to face AM and PM before heavier creams.',
-    warnings: 'If irritation occurs, cease use and consult a physician.',
+    description: "Brightening Vitamin C foam cleanser removes oil and impurities while improving radiance.",
+    fullDescription:
+      "Vitamin C Cleansing Foam helps refresh dull skin and supports pore clarity with antioxidant support.",
+    ingredients: "Aqua/Water, Sodium Lauroyl Glutamate, Ascorbic Acid",
+    howToUse: "Massage onto damp skin and rinse.",
+    warnings: "Avoid eye contact.",
     inStock: true,
     isPrescriptionRequired: false,
-    rating: 4.7,
-    reviewCount: 789,
-    tags: ['popular', 'acne-prone'],
-    skinType: ['oily', 'combination'],
-    condition: ['acne'],
+    rating: 4.3,
+    reviewCount: 410,
+    tags: ["brightening", "vitamin-c"],
+    skinType: ["normal", "dull"],
     reviews: sampleReviews,
   },
+
+  // 4 Garnier 3 in 1 Charcoal Wash
   {
-    id: 'p17',
-    name: 'Neutrogena Hydro Boost Water Gel',
-    brand: 'Neutrogena',
-    category: 'skincare',
-    subcategory: 'moisturizers',
-    price: 1850,
-    image: 'https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?w=400&h=400&fit=crop',
+    id: "p4",
+    name: "Garnier SkinActive 3‑in‑1 Charcoal Wash",
+    brand: "Garnier",
+    category: "skincare",
+    subcategory: "cleansers",
+    price: 1250,
+    image:
+    garnierCharcoal,
     images: [
-      'https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?w=800&h=800&fit=crop',
-      'https://images.unsplash.com/photo-1570194065650-d99fb4b38b33?w=800&h=800&fit=crop',
+      garnierCharcoal,
     ],
-    description: 'Oil-free water gel moisturizer with hyaluronic acid for 48-hour hydration.',
-    fullDescription: 'Neutrogena Hydro Boost Water Gel is a refreshing, oil-free moisturizer that quenches dry skin instantly.',
-    ingredients: 'Water, Dimethicone, Glycerin, Sodium Hyaluronate',
-    howToUse: 'Smooth over face and neck morning and night.',
+    description: "Multitasking charcoal wash that cleanses, exfoliates and purifies pores.",
+    fullDescription:
+      "Garnier 3‑in‑1 Charcoal Wash helps remove impurities and excess oil while gently exfoliating the skin.",
+    ingredients: "Water, Charcoal Powder, Glycerin, Coco‑Glucoside",
+    howToUse: "Use daily as a wash, scrub or mask.",
+    warnings: "Avoid eye area.",
     inStock: true,
     isPrescriptionRequired: false,
     rating: 4.6,
-    reviewCount: 567,
-    tags: ['hydrating', 'oil-free'],
-    skinType: ['all', 'oily', 'combination'],
+    reviewCount: 920,
+    tags: ["deep-cleanse", "oil-control"],
+    skinType: ["oily", "combination"],
     reviews: sampleReviews,
   },
+
+  // 5 Garnier 3 in 1 Clay Wash
   {
-    id: 'p18',
-    name: "Paula's Choice 2% BHA Exfoliant",
-    brand: "Paula's Choice",
-    category: 'skincare',
-    subcategory: 'serums',
-    price: 3200,
-    image: 'https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=400&h=400&fit=crop',
+    id: "p5",
+    name: "Garnier SkinActive 3‑in‑1 Clay Wash",
+    brand: "Garnier",
+    category: "skincare",
+    subcategory: "cleansers",
+    price: 1250,
+    image:
+    garnierClay,
     images: [
-      'https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=800&h=800&fit=crop',
+      garnierClay,
     ],
-    description: 'Leave-on exfoliant with salicylic acid to unclog pores and smooth wrinkles.',
-    fullDescription: 'This cult-favorite BHA leave-on exfoliant gently exfoliates dead skin cells both on the surface and inside the pore.',
-    ingredients: 'Water, Methylpropanediol, Salicylic Acid, Green Tea Extract',
-    howToUse: 'After cleansing, apply once or twice daily with a cotton pad. Do not rinse.',
+    description: "Clay wash for deep pore cleansing and oil reduction.",
+    fullDescription:
+      "Garnier 3‑in‑1 Clay Wash is formulated to reduce excess oil and help prevent breakouts.",
+    ingredients: "Water, Kaolin Clay, Glycerin, Coco‑Glucoside",
+    howToUse: "Apply on wet face, massage, then rinse.",
+    warnings: "Avoid eye contact.",
+    inStock: true,
+    isPrescriptionRequired: false,
+    rating: 4.5,
+    reviewCount: 720,
+    tags: ["deep-cleanse", "oil-control"],
+    skinType: ["oily", "combination"],
+    reviews: sampleReviews,
+  },
+
+  // 6 Aveeno Moisturising Creamy Oil
+  {
+    id: "p6",
+    name: "Aveeno Daily Moisturising Creamy Oil",
+    brand: "Aveeno",
+    category: "skincare",
+    subcategory: "moisturizers",
+    price: 1550,
+    image:
+    aveenoOil,
+    images: [
+      aveenoOil,
+    ],
+    description: "Rich creamy oil for deep hydration and nourishment.",
+    fullDescription:
+      "Aveeno Moisturising Creamy Oil enriched with oat oil nourishes dry skin and helps strengthen skin’s barrier.",
+    ingredients: "Aqua/Water, Avena Sativa (Oat) Kernel Oil, Glycerin",
+    howToUse: "Apply after shower to damp skin.",
+    warnings: "For external use only.",
+    inStock: true,
+    isPrescriptionRequired: false,
+    rating: 4.7,
+    reviewCount: 520,
+    tags: ["rich-hydration", "dry-skin"],
+    skinType: ["dry", "sensitive"],
+    reviews: sampleReviews,
+  },
+
+  // 7 CeraVe Vitamin C Serum
+  {
+    id: "p7",
+    name: "CeraVe Vitamin C Serum",
+    brand: "CeraVe",
+    category: "skincare",
+    subcategory: "serums",
+    price: 3400,
+    image:
+    ceraveVitaminC,
+    images: [
+      ceraveVitaminC,
+    ],
+    description: "Brightening Vitamin C serum with ceramides.",
+    fullDescription:
+      "CeraVe Vitamin C Serum helps restore skin barrier and boost radiance with a stable form of Vitamin C and ceramide technology.",
+    ingredients: "Aqua/Water, Ascorbic Acid, Glycerin, Ceramides",
+    howToUse: "Apply in the morning before moisturizer and sunscreen.",
+    warnings: "Avoid eye contact.",
     inStock: true,
     isPrescriptionRequired: false,
     rating: 4.8,
-    reviewCount: 1234,
-    tags: ['bestseller', 'exfoliating'],
-    skinType: ['all'],
-    condition: ['acne'],
+    reviewCount: 740,
+    tags: ["brightening", "antioxidant"],
+    skinType: ["all"],
+    reviews: sampleReviews,
+  },
+
+  // 8 La Roche-Posay Vitamin C10 Serum
+  {
+    id: "p8",
+    name: "La Roche-Posay Pure Vitamin C10 Serum",
+    brand: "La Roche-Posay",
+    category: "skincare",
+    subcategory: "serums",
+    price: 4200,
+    image:
+    laRocheC10,
+    images: [
+      laRocheC10,
+    ],
+    description: "Dermatologist-tested antioxidant serum with 10% pure Vitamin C.",
+    fullDescription:
+      "La Roche-Posay Vitamin C10 Serum helps improve skin radiance, texture and fine lines while being suitable for sensitive skin.",
+    ingredients: "Aqua, Ascorbic Acid, Salicylic Acid, Neurosensine",
+    howToUse: "Apply 3–4 drops to face in the morning.",
+    warnings: "Avoid eye area.",
+    inStock: true,
+    isPrescriptionRequired: false,
+    rating: 4.8,
+    reviewCount: 510,
+    tags: ["vitamin-c", "brightening", "anti-aging"],
+    skinType: ["all", "sensitive"],
+    reviews: sampleReviews,
+  },
+
+  // 9 Mary & May Eye Cream
+  {
+    id: "p9",
+    name: "Mary & May Tranexamic Acid + Glutathione Eye Cream",
+    brand: "Mary & May",
+    category: "skincare",
+    subcategory: "eye-care",
+    price: 1850,
+    image:
+    maryMayEye,
+    images: [
+      maryMayEye,
+    ],
+    description: "Brightening and hydrating eye cream for dark circles.",
+    fullDescription:
+      "Targets dullness, pigmentation and fine lines around the eyes using tranexamic acid and antioxidants.",
+    ingredients: "Niacinamide, Tranexamic Acid, Glutathione, Glycerin",
+    howToUse: "Gently tap around eye area morning and night.",
+    warnings: "Avoid direct eye contact.",
+    inStock: true,
+    isPrescriptionRequired: false,
+    rating: 4.7,
+    reviewCount: 390,
+    tags: ["eye-care", "brightening", "bestseller"],
+    skinType: ["all"],
+    reviews: sampleReviews,
+  },
+
+  // 10 Epimol B Baby & Junior
+  {
+    id: "p10",
+    name: "Epimol B Baby & Junior Cream",
+    brand: "Epimol",
+    category: "skincare",
+    subcategory: "lotions",
+    price: 650,
+    image:
+    epimolB,
+    images: [
+      epimolB,
+    ],
+    description: "Daily emollient for babies with dry or sensitive skin.",
+    fullDescription:
+      "Epimol B helps restore moisture and soothe eczema-prone baby skin.",
+    ingredients: "White Soft Paraffin, Liquid Paraffin, Glycerin",
+    howToUse: "Apply liberally as needed.",
+    warnings: "For external use only.",
+    inStock: true,
+    isPrescriptionRequired: false,
+    rating: 4.8,
+    reviewCount: 430,
+    tags: ["baby-care", "eczema", "bestseller"],
+    skinType: ["sensitive"],
+    reviews: sampleReviews,
+  },
+
+  // 11 Baby Dove Sensitive Wash
+  {
+    id: "p11",
+    name: "Baby Dove Sensitive Moisture Head to Toe Wash",
+    brand: "Dove",
+    category: "skincare",
+    subcategory: "wash",
+    price: 550,
+    image:
+    babyDove,
+    images: [
+      babyDove,
+    ],
+    description: "Ultra-mild baby wash suitable for newborn skin.",
+    fullDescription:
+      "Gently cleanses without drying, tear-free and dermatologist tested.",
+    ingredients: "Water, Glycerin, Cocamidopropyl Betaine",
+    howToUse: "Lather onto wet skin and rinse.",
+    warnings: "Avoid eyes.",
+    inStock: true,
+    isPrescriptionRequired: false,
+    rating: 4.7,
+    reviewCount: 500,
+    tags: ["baby-care", "gentle"],
+    skinType: ["sensitive"],
+    reviews: sampleReviews,
+  },
+
+  // 12 Nivea Sun SPF 50
+  {
+    id: "p12",
+    name: "Nivea Sun Protect & Moisture SPF 50",
+    brand: "Nivea",
+    category: "skincare",
+    subcategory: "sunscreens",
+    price: 1800,
+    image:
+    niveaSpf50,
+    images: [
+      niveaSpf50,
+    ],
+    description: "High-protection sunscreen with long-lasting hydration.",
+    fullDescription:
+      "Provides immediate UVA/UVB protection while moisturizing the skin.",
+    ingredients: "Octocrylene, Avobenzone, Glycerin",
+    howToUse: "Apply 15 minutes before sun exposure.",
+    warnings: "Reapply frequently.",
+    inStock: true,
+    isPrescriptionRequired: false,
+    rating: 4.8,
+    reviewCount: 680,
+    tags: ["sun-protection", "spf50", "bestseller"],
+    skinType: ["all"],
+    reviews: sampleReviews,
+  },
+
+  // 13 Simple Facial Toner
+  {
+    id: "p13",
+    name: "Simple Soothing Facial Toner",
+    brand: "Simple",
+    category: "skincare",
+    subcategory: "toners",
+    price: 720,
+    image:
+    simpleToner,
+    images: [
+      simpleToner,
+    ],
+    description: "Alcohol-free toner for sensitive skin.",
+    fullDescription:
+      "Refreshes skin and removes residual impurities without irritation.",
+    ingredients: "Water, Chamomile Extract, Panthenol",
+    howToUse: "Apply with cotton pad after cleansing.",
+    warnings: "For external use only.",
+    inStock: true,
+    isPrescriptionRequired: false,
+    rating: 4.5,
+    reviewCount: 410,
+    tags: ["gentle", "toner"],
+    skinType: ["all", "sensitive"],
+    reviews: sampleReviews,
+  },
+
+  // 14 Anua Soothing Toner
+  {
+    id: "p14",
+    name: "Anua Heartleaf 77% Soothing Toner",
+    brand: "Anua",
+    category: "skincare",
+    subcategory: "toners",
+    price: 1400,
+    image:
+    anuaToner,
+    images: [
+      anuaToner,
+    ],
+    description: "Calming toner with heartleaf extract.",
+    fullDescription:
+      "Reduces redness, hydrates skin and strengthens skin barrier.",
+    ingredients: "Houttuynia Cordata Extract, Glycerin",
+    howToUse: "Apply with hands or cotton pad.",
+    warnings: "Avoid eyes.",
+    inStock: true,
+    isPrescriptionRequired: false,
+    rating: 4.7,
+    reviewCount: 350,
+    tags: ["soothing", "k-beauty", "bestseller"],
+    skinType: ["sensitive", "acne-prone"],
+    reviews: sampleReviews,
+  },
+
+  // 15 Malibu SPF 30
+  {
+    id: "p15",
+    name: "Malibu Sun Lotion SPF 30",
+    brand: "Malibu",
+    category: "skincare",
+    subcategory: "sunscreens",
+    price: 1200,
+    image:
+    malibuSpf30,
+    images: [
+      malibuSpf30,
+    ],
+    description: "Water-resistant sun protection for everyday use.",
+    fullDescription:
+      "Protects against sunburn while keeping skin moisturized.",
+    ingredients: "Octocrylene, Glycerin",
+    howToUse: "Apply generously before sun exposure.",
+    warnings: "Reapply after swimming.",
+    inStock: true,
+    isPrescriptionRequired: false,
+    rating: 4.6,
+    reviewCount: 290,
+    tags: ["sun-care", "spf30"],
+    skinType: ["all"],
+    reviews: sampleReviews,
+  },
+
+  // 16 Dr Althea 345 Relief Cream
+  {
+    id: "p16",
+    name: "Dr Althea 345 Relief Cream",
+    brand: "Dr Althea",
+    category: "skincare",
+    subcategory: "creams",
+    price: 2200,
+    image:
+    drAlthea345,
+    images: [
+      drAlthea345,
+    ],
+    description: "Barrier-repair cream for damaged skin.",
+    fullDescription:
+      "Soothes irritation, restores moisture and strengthens skin barrier.",
+    ingredients: "Panthenol, Ceramides, Glycerin",
+    howToUse: "Apply to affected areas daily.",
+    warnings: "External use only.",
+    inStock: true,
+    isPrescriptionRequired: false,
+    rating: 4.7,
+    reviewCount: 260,
+    tags: ["barrier-repair", "soothing", "bestseller"],
+    skinType: ["dry", "sensitive"],
+    reviews: sampleReviews,
+  },
+
+  // 17 Epimol E Cleanser Bar
+  {
+    id: "p17",
+    name: "Epimol E Cleansing Bar",
+    brand: "Epimol",
+    category: "skincare",
+    subcategory: "cleansers",
+    price: 650,
+    image:
+    epimolEBar,
+    images: [
+      epimolEBar,
+    ],
+    description: "Soap-free cleanser for dry and eczema-prone skin.",
+    fullDescription:
+      "Gently cleanses while maintaining skin hydration.",
+    ingredients: "Sodium Cocoyl Isethionate, Vitamin E",
+    howToUse: "Lather and rinse.",
+    warnings: "Avoid eyes.",
+    inStock: true,
+    isPrescriptionRequired: false,
+    rating: 4.6,
+    reviewCount: 310,
+    tags: ["eczema", "gentle", "bestseller"],
+    skinType: ["dry", "sensitive"],
+    reviews: sampleReviews,
+  },
+
+  // 18 Dove Bar Soap
+  {
+    id: "p18",
+    name: "Dove Beauty Cream Bar",
+    brand: "Dove",
+    category: "personal-care",
+    subcategory: "cleansers",
+    price: 450,
+    image:
+    doveBar ,
+    images: [
+      doveBar ,
+    ],
+    description: "Moisturizing beauty bar with ¼ cleansing cream.",
+    fullDescription:
+      "Cleanses gently while maintaining skin softness.",
+    ingredients: "Stearic Acid, Sodium Lauroyl Isethionate",
+    howToUse: "Apply to wet skin and rinse.",
+    warnings: "For external use.",
+    inStock: true,
+    isPrescriptionRequired: false,
+    rating: 4.6,
+    reviewCount: 890,
+    tags: ["daily-care", "moisturizing", "bestseller"],
+    skinType: ["all"],
+    reviews: sampleReviews,
+  },
+
+  // 19 Perobar 2.5%
+  {
+    id: "p19",
+    name: "Perobar Benzoyl Peroxide 2.5%",
+    brand: "Perobar",
+    category: "skincare",
+    subcategory: "medicated-skin",
+    price: 900,
+    image:
+    perobar25,
+    images: [
+      perobar25,
+    ],
+    description: "Low-strength benzoyl peroxide acne treatment.",
+    fullDescription:
+      "Kills acne-causing bacteria and reduces inflammation.",
+    ingredients: "Benzoyl Peroxide 2.5%",
+    howToUse: "Apply thin layer once daily.",
+    warnings: "May cause dryness.",
+    inStock: true,
+    isPrescriptionRequired: true,
+    rating: 4.4,
+    reviewCount: 200,
+    tags: ["acne-treatment", "medicated"],
+    skinType: ["acne-prone"],
+    reviews: sampleReviews,
+  },
+
+  // 20 Perobar 5%
+  {
+    id: "p20",
+    name: "Perobar Benzoyl Peroxide 5%",
+    brand: "Perobar",
+    category: "skincare",
+    subcategory: "medicated-skin",
+    price: 1200,
+    image:
+    perobar5,
+    images: [
+      perobar5,
+    ],
+    description: "Higher-strength benzoyl peroxide acne therapy.",
+    fullDescription:
+      "Effective for moderate to severe acne cases.",
+    ingredients: "Benzoyl Peroxide 5%",
+    howToUse: "Apply once daily or as directed.",
+    warnings: "Avoid sun exposure.",
+    inStock: true,
+    isPrescriptionRequired: true,
+    rating: 4.5,
+    reviewCount: 170,
+    tags: ["acne-treatment", "prescription"],
+    skinType: ["acne-prone"],
     reviews: sampleReviews,
   },
   // Medicines
@@ -457,7 +907,7 @@ export const products: Product[] = [
     isPrescriptionRequired: false,
     rating: 4.7,
     reviewCount: 890,
-    tags: ['bestseller'],
+    tags: ["prescription"],
     reviews: sampleReviews,
   },
   {
@@ -589,7 +1039,7 @@ export const products: Product[] = [
     isPrescriptionRequired: false,
     rating: 4.7,
     reviewCount: 2345,
-    tags: ['bestseller'],
+    tags: ["prescription"],
     reviews: sampleReviews,
   },
   {
@@ -611,7 +1061,7 @@ export const products: Product[] = [
     isPrescriptionRequired: false,
     rating: 4.8,
     reviewCount: 1234,
-    tags: ['bestseller', 'brain-development'],
+    tags: ['brain-development'],
     reviews: sampleReviews,
   },
   // Medical Devices
@@ -635,7 +1085,7 @@ export const products: Product[] = [
     isPrescriptionRequired: false,
     rating: 4.8,
     reviewCount: 456,
-    tags: ['bestseller', 'doctor-recommended'],
+    tags: ['doctor-recommended'],
     condition: ['hypertension'],
     reviews: sampleReviews,
   },
@@ -724,7 +1174,7 @@ export const products: Product[] = [
     isPrescriptionRequired: false,
     rating: 4.7,
     reviewCount: 890,
-    tags: ['sensitive-teeth', 'bestseller'],
+    tags: ['sensitive-teeth'],
     reviews: sampleReviews,
   },
   // Hair Care
@@ -860,7 +1310,7 @@ export const products: Product[] = [
     isPrescriptionRequired: false,
     rating: 4.6,
     reviewCount: 567,
-    tags: ['protection', 'bestseller'],
+    tags: ['protection'],
     reviews: sampleReviews,
   },
   {
@@ -881,7 +1331,7 @@ export const products: Product[] = [
     isPrescriptionRequired: false,
     rating: 4.8,
     reviewCount: 1234,
-    tags: ['accurate', 'bestseller'],
+    tags: ['accurate'],
     reviews: sampleReviews,
   },
   // Eye, Ear & Dental Care
@@ -1039,7 +1489,7 @@ export const products: Product[] = [
     isPrescriptionRequired: false,
     rating: 4.9,
     reviewCount: 234,
-    tags: ['bestseller', 'essential'],
+    tags: ['essential'],
     reviews: sampleReviews,
   },
   {
@@ -1061,7 +1511,7 @@ export const products: Product[] = [
     isPrescriptionRequired: false,
     rating: 4.6,
     reviewCount: 1567,
-    tags: ['bestseller', 'essential'],
+    tags: ['essential'],
     reviews: sampleReviews,
   },
 ];
