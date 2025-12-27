@@ -20,6 +20,59 @@ import doveBar from "@/assets/products/dove-bar.jpg";
 import perobar25 from "@/assets/products/perobar-2.5.jpg";
 import perobar5 from "@/assets/products/perobar-5.jpg";
 
+import panadolImg from "@/assets/products/panadol-extra.jpg";
+import strepsilsImg from "@/assets/products/strepsils-honey-lemon.jpg";
+import omeprazoleImg from "@/assets/products/omeprazole-20mg.jpg";
+import zyrtecImg from "@/assets/products/zyrtec-10mg.jpg";
+import ibuprofenImg from "@/assets/products/ibuprofen-400mg.jpg";
+
+import centrumImg from "@/assets/products/centrum-multivitamin.jpg";
+import vitaminDImg from "@/assets/products/vitamin-d3.jpg";
+import omega3Img from "@/assets/products/omega-3.jpg";
+import probioticsImg from "@/assets/products/probiotics.jpg";
+import vitaminCImg from "@/assets/products/vitamin-c-1000.jpg";
+
+import johnsonsImg from "@/assets/products/johnsons-baby-lotion.jpg";
+import pampersImg from "@/assets/products/pampers-diapers.jpg";
+import enfamilImg from "@/assets/products/enfamil-neuropro.jpg";
+
+import omronBp from "@/assets/products/omron-bp.jpg";
+import omronBp2 from "@/assets/products/omron-bp-2.jpg";
+
+import braunThermo from "@/assets/products/braun-thermometer.jpg";
+
+import oralB from "@/assets/products/oralb-toothbrush.jpg";
+// Oral care
+import sensodyneRapid from "@/assets/products/sensodyne-rapid-relief.jpg";
+
+// Hair care
+import doveRepair from "@/assets/products/dove-intensive-repair.jpg";
+import minoxidil from "@/assets/products/minoxidil-5.jpg";
+import ogxArgan from "@/assets/products/ogx-argan.jpg";
+
+// Wellness
+import lavenderOil from "@/assets/products/lavender-oil.jpg";
+import melatonin from "@/assets/products/melatonin-5mg.jpg";
+
+// Sexual health
+import durexExtraSafe from "@/assets/products/durex-extra-safe.jpg";
+import clearblueTest from "@/assets/products/clearblue-pregnancy.jpg";
+
+// Eye / Ear / Dental
+import systaneUltra from "@/assets/products/systane-ultra.jpg";
+import otexEar from "@/assets/products/otex-ear-drops.jpg";
+import orajel from "@/assets/products/orajel-gel.jpg";
+
+// Health conditions
+import metformin from "@/assets/products/metformin-500.jpg";
+import amlodipine from "@/assets/products/amlodipine-5.jpg";
+import salbutamol from "@/assets/products/salbutamol-inhaler.jpg";
+
+// Offers
+import firstAidKit from "@/assets/products/first-aid-kit.jpg";
+import dettolSanitizer from "@/assets/products/dettol-sanitizer.jpg";
+
+
 // Categories with subcategories - Skin Care & Dermatology is the MAIN category
 export const categories: Category[] = [
   {
@@ -220,7 +273,7 @@ export const products: Product[] = [
     brand: "Simple",
     category: "skincare",
     subcategory: "moisturizers",
-    price: 1250,
+    price: 1500,
     image: simpleLightMoisturiser,
     images: [
       simpleLightMoisturiser
@@ -247,7 +300,7 @@ export const products: Product[] = [
     brand: "Simple",
     category: "skincare",
     subcategory: "cleansers",
-    price: 1050,
+    price: 1500,
     image: simpleCleansingLotion,
     images: [
       simpleCleansingLotion,
@@ -274,7 +327,7 @@ export const products: Product[] = [
     brand: "Unknown",
     category: "skincare",
     subcategory: "cleansers",
-    price: 1150,
+    price: 760,
     image: vitaminCFoam,
     images: [
       vitaminCFoam,
@@ -301,7 +354,7 @@ export const products: Product[] = [
     brand: "Garnier",
     category: "skincare",
     subcategory: "cleansers",
-    price: 1250,
+    price: 1100,
     image:
     garnierCharcoal,
     images: [
@@ -329,7 +382,7 @@ export const products: Product[] = [
     brand: "Garnier",
     category: "skincare",
     subcategory: "cleansers",
-    price: 1250,
+    price: 1500,
     image:
     garnierClay,
     images: [
@@ -357,7 +410,7 @@ export const products: Product[] = [
     brand: "Aveeno",
     category: "skincare",
     subcategory: "moisturizers",
-    price: 1550,
+    price: 3200,
     image:
     aveenoOil,
     images: [
@@ -385,7 +438,7 @@ export const products: Product[] = [
     brand: "CeraVe",
     category: "skincare",
     subcategory: "serums",
-    price: 3400,
+    price: 5000,
     image:
     ceraveVitaminC,
     images: [
@@ -413,7 +466,7 @@ export const products: Product[] = [
     brand: "La Roche-Posay",
     category: "skincare",
     subcategory: "serums",
-    price: 4200,
+    price: 6900,
     image:
     laRocheC10,
     images: [
@@ -441,7 +494,7 @@ export const products: Product[] = [
     brand: "Mary & May",
     category: "skincare",
     subcategory: "eye-care",
-    price: 1850,
+    price: 2500,
     image:
     maryMayEye,
     images: [
@@ -469,7 +522,7 @@ export const products: Product[] = [
     brand: "Epimol",
     category: "skincare",
     subcategory: "lotions",
-    price: 650,
+    price: 1800,
     image:
     epimolB,
     images: [
@@ -497,7 +550,7 @@ export const products: Product[] = [
     brand: "Dove",
     category: "skincare",
     subcategory: "wash",
-    price: 550,
+    price: 900,
     image:
     babyDove,
     images: [
@@ -525,7 +578,7 @@ export const products: Product[] = [
     brand: "Nivea",
     category: "skincare",
     subcategory: "sunscreens",
-    price: 1800,
+    price: 1500,
     image:
     niveaSpf50,
     images: [
@@ -553,7 +606,7 @@ export const products: Product[] = [
     brand: "Simple",
     category: "skincare",
     subcategory: "toners",
-    price: 720,
+    price: 1500,
     image:
     simpleToner,
     images: [
@@ -581,7 +634,7 @@ export const products: Product[] = [
     brand: "Anua",
     category: "skincare",
     subcategory: "toners",
-    price: 1400,
+    price: 1500,
     image:
     anuaToner,
     images: [
@@ -609,7 +662,7 @@ export const products: Product[] = [
     brand: "Malibu",
     category: "skincare",
     subcategory: "sunscreens",
-    price: 1200,
+    price: 1600,
     image:
     malibuSpf30,
     images: [
@@ -637,7 +690,7 @@ export const products: Product[] = [
     brand: "Dr Althea",
     category: "skincare",
     subcategory: "creams",
-    price: 2200,
+    price: 3400,
     image:
     drAlthea345,
     images: [
@@ -665,7 +718,7 @@ export const products: Product[] = [
     brand: "Epimol",
     category: "skincare",
     subcategory: "cleansers",
-    price: 650,
+    price: 750,
     image:
     epimolEBar,
     images: [
@@ -693,7 +746,7 @@ export const products: Product[] = [
     brand: "Dove",
     category: "personal-care",
     subcategory: "cleansers",
-    price: 450,
+    price: 350,
     image:
     doveBar ,
     images: [
@@ -721,7 +774,7 @@ export const products: Product[] = [
     brand: "Perobar",
     category: "skincare",
     subcategory: "medicated-skin",
-    price: 900,
+    price: 1200,
     image:
     perobar25,
     images: [
@@ -777,10 +830,9 @@ export const products: Product[] = [
     category: 'otc-medicines',
     subcategory: 'pain-fever',
     price: 350,
-    image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&h=400&fit=crop',
+    image: panadolImg,
     images: [
-      'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&h=800&fit=crop',
-      'https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=800&h=800&fit=crop',
+      panadolImg,
     ],
     description: 'Fast-acting pain relief for headaches, muscle aches, and fever.',
     fullDescription: 'Panadol Extra Strength contains 500mg of paracetamol plus 65mg of caffeine for fast, effective relief from pain and fever.',
@@ -801,9 +853,9 @@ export const products: Product[] = [
     category: 'otc-medicines',
     subcategory: 'cold-flu',
     price: 280,
-    image: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=400&h=400&fit=crop',
+    image: strepsilsImg,
     images: [
-      'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&h=800&fit=crop',
+      strepsilsImg,
     ],
     description: 'Soothing lozenges for sore throat relief.',
     fullDescription: 'Strepsils Honey & Lemon lozenges provide effective relief from sore throat and mouth infections.',
@@ -824,9 +876,9 @@ export const products: Product[] = [
     category: 'prescription-medicines',
     subcategory: 'gastrointestinal',
     price: 450,
-    image: 'https://images.unsplash.com/photo-1550572017-edd951b55104?w=400&h=400&fit=crop',
+    image: omeprazoleImg,
     images: [
-      'https://images.unsplash.com/photo-1550572017-edd951b55104?w=800&h=800&fit=crop',
+      omeprazoleImg,
     ],
     description: 'Proton pump inhibitor for acid reflux and heartburn.',
     fullDescription: 'Omeprazole reduces stomach acid production. Used for GERD and stomach ulcers.',
@@ -847,9 +899,9 @@ export const products: Product[] = [
     category: 'otc-medicines',
     subcategory: 'allergy',
     price: 480,
-    image: 'https://images.unsplash.com/photo-1585435557343-3b092031a831?w=400&h=400&fit=crop',
+    image: zyrtecImg,
     images: [
-      'https://images.unsplash.com/photo-1585435557343-3b092031a831?w=800&h=800&fit=crop',
+      zyrtecImg,
     ],
     description: '24-hour allergy relief from hay fever and allergies.',
     fullDescription: 'Zyrtec contains cetirizine hydrochloride, a powerful antihistamine for 24-hour relief.',
@@ -870,9 +922,9 @@ export const products: Product[] = [
     category: 'otc-medicines',
     subcategory: 'pain-fever',
     price: 320,
-    image: 'https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=400&h=400&fit=crop',
+    image: ibuprofenImg,
     images: [
-      'https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=800&h=800&fit=crop',
+      ibuprofenImg,
     ],
     description: 'Anti-inflammatory pain relief for headaches, dental pain, and period pain.',
     fullDescription: 'Ibuprofen is a non-steroidal anti-inflammatory drug (NSAID) for effective pain relief.',
@@ -894,10 +946,9 @@ export const products: Product[] = [
     category: 'supplements',
     subcategory: 'multivitamins',
     price: 1850,
-    image: 'https://images.unsplash.com/photo-1550572017-4fcdbb59cc32?w=400&h=400&fit=crop',
+    image: centrumImg,
     images: [
-      'https://images.unsplash.com/photo-1550572017-4fcdbb59cc32?w=800&h=800&fit=crop',
-      'https://images.unsplash.com/photo-1577401239170-897942555fb3?w=800&h=800&fit=crop',
+      centrumImg,
     ],
     description: 'Complete multivitamin with essential nutrients for daily wellness.',
     fullDescription: 'Centrum Adults is a complete multivitamin with vitamins A, C, D, E, K, and B vitamins for energy.',
@@ -917,9 +968,9 @@ export const products: Product[] = [
     category: 'supplements',
     subcategory: 'immunity',
     price: 1250,
-    image: 'https://images.unsplash.com/photo-1577401239170-897942555fb3?w=400&h=400&fit=crop',
+    image: vitaminDImg,
     images: [
-      'https://images.unsplash.com/photo-1577401239170-897942555fb3?w=800&h=800&fit=crop',
+      vitaminDImg,
     ],
     description: 'Supports immune health, bone health, and muscle function.',
     fullDescription: 'Vitamin D3 is the body\'s preferred form of vitamin D for bone, teeth, and immune health.',
@@ -939,9 +990,9 @@ export const products: Product[] = [
     category: 'supplements',
     subcategory: 'immunity',
     price: 2450,
-    image: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400&h=400&fit=crop',
+    image: omega3Img,
     images: [
-      'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800&h=800&fit=crop',
+      omega3Img,
     ],
     description: 'High-quality omega-3 for heart and brain health.',
     fullDescription: 'Nordic Naturals Ultimate Omega provides EPA and DHA omega-3 fatty acids for heart and brain wellness.',
@@ -961,9 +1012,9 @@ export const products: Product[] = [
     category: 'supplements',
     subcategory: 'digestive-health',
     price: 2850,
-    image: 'https://images.unsplash.com/photo-1556228724-4cc9f64f3a3b?w=400&h=400&fit=crop',
+    image: probioticsImg,
     images: [
-      'https://images.unsplash.com/photo-1556228724-4cc9f64f3a3b?w=800&h=800&fit=crop',
+      probioticsImg,
     ],
     description: 'High-potency probiotic for digestive and immune health.',
     fullDescription: 'Garden of Life RAW Probiotics delivers 50 billion CFU of 34 probiotic strains.',
@@ -983,9 +1034,9 @@ export const products: Product[] = [
     category: 'supplements',
     subcategory: 'immunity',
     price: 980,
-    image: 'https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=400&h=400&fit=crop',
+    image: vitaminCImg,
     images: [
-      'https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=800&h=800&fit=crop',
+      vitaminCImg,
     ],
     description: 'High-potency vitamin C for immune support and antioxidant protection.',
     fullDescription: 'NOW Vitamin C-1000 with Rose Hips provides powerful antioxidant protection.',
@@ -1006,9 +1057,9 @@ export const products: Product[] = [
     category: 'baby-mother',
     subcategory: 'baby-skincare',
     price: 650,
-    image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400&h=400&fit=crop',
+    image: johnsonsImg,
     images: [
-      'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=800&h=800&fit=crop',
+      johnsonsImg,
     ],
     description: "Gentle, clinically proven mild lotion for baby's delicate skin.",
     fullDescription: "Johnson's Baby Lotion is clinically proven mild and gentle enough for newborns.",
@@ -1028,9 +1079,9 @@ export const products: Product[] = [
     category: 'baby-mother',
     subcategory: 'diapers',
     price: 1850,
-    image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&h=400&fit=crop',
+    image: pampersImg,
     images: [
-      'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&h=800&fit=crop',
+      pampersImg,
     ],
     description: 'Ultra-soft diapers with up to 12 hours of protection.',
     fullDescription: 'Pampers Premium Care diapers are made with cotton-like softness and wetness indicator.',
@@ -1049,9 +1100,9 @@ export const products: Product[] = [
     category: 'baby-mother',
     subcategory: 'baby-food',
     price: 3200,
-    image: 'https://images.unsplash.com/photo-1584839400821-68a3af1b7238?w=400&h=400&fit=crop',
+    image: enfamilImg,
     images: [
-      'https://images.unsplash.com/photo-1584839400821-68a3af1b7238?w=800&h=800&fit=crop',
+      enfamilImg,
     ],
     description: 'Brain-building nutrition with MFGM and Omega-3 DHA for babies 0-12 months.',
     fullDescription: 'Enfamil NeuroPro is infant formula with MFGM and DHA for brain development.',
@@ -1072,10 +1123,9 @@ export const products: Product[] = [
     category: 'medical-devices',
     subcategory: 'bp-monitors',
     price: 4500,
-    image: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=400&h=400&fit=crop',
+    image: omronBp,
     images: [
-      'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&h=800&fit=crop',
-      'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=800&fit=crop',
+      omronBp,
     ],
     description: 'Accurate digital blood pressure monitor for home use.',
     fullDescription: 'Omron Blood Pressure Monitor is clinically validated with irregular heartbeat detection.',
@@ -1096,9 +1146,9 @@ export const products: Product[] = [
     category: 'medical-devices',
     subcategory: 'glucometers',
     price: 3200,
-    image: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=400&h=400&fit=crop',
+    image: omronBp2,
     images: [
-      'https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&h=800&fit=crop',
+      omronBp2,
     ],
     description: 'Easy-to-use blood glucose monitoring system.',
     fullDescription: 'Accu-Chek Guide provides accurate blood glucose readings in just 4 seconds.',
@@ -1119,9 +1169,9 @@ export const products: Product[] = [
     category: 'medical-devices',
     subcategory: 'thermometers',
     price: 1850,
-    image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&h=400&fit=crop',
+    image: braunThermo,
     images: [
-      'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&h=800&fit=crop',
+      braunThermo,
     ],
     description: 'Fast and accurate digital thermometer with fever guidance.',
     fullDescription: 'Braun Digital Thermometer provides fast readings in just 8 seconds with fever guidance.',
@@ -1141,9 +1191,9 @@ export const products: Product[] = [
     category: 'personal-care',
     subcategory: 'oral-care',
     price: 3850,
-    image: 'https://images.unsplash.com/photo-1559467185-94dcd8c74b35?w=400&h=400&fit=crop',
+    image: oralB,
     images: [
-      'https://images.unsplash.com/photo-1559467185-94dcd8c74b35?w=800&h=800&fit=crop',
+      oralB,
     ],
     description: 'Rechargeable electric toothbrush with 2-minute timer.',
     fullDescription: 'Oral-B Pro 1000 removes up to 100% more plaque than a regular manual toothbrush.',
@@ -1162,9 +1212,9 @@ export const products: Product[] = [
     category: 'personal-care',
     subcategory: 'oral-care',
     price: 520,
-    image: 'https://images.unsplash.com/photo-1628359355624-855c45d77d96?w=400&h=400&fit=crop',
+    image: sensodyneRapid,
     images: [
-      'https://images.unsplash.com/photo-1628359355624-855c45d77d96?w=800&h=800&fit=crop',
+      sensodyneRapid,
     ],
     description: 'Clinically proven relief from tooth sensitivity in 60 seconds.',
     fullDescription: 'Sensodyne Rapid Relief provides fast relief from sensitive teeth.',
@@ -1185,9 +1235,9 @@ export const products: Product[] = [
     category: 'personal-care',
     subcategory: 'hair-care',
     price: 550,
-    image: 'https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?w=400&h=400&fit=crop',
+    image: doveRepair,
     images: [
-      'https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?w=800&h=800&fit=crop',
+      doveRepair,
     ],
     description: 'Nourishing shampoo for damaged hair with keratin repair actives.',
     fullDescription: 'Dove Intensive Repair Shampoo nourishes deeply with Keratin Repair Actives.',
@@ -1207,9 +1257,9 @@ export const products: Product[] = [
     category: 'personal-care',
     subcategory: 'hair-care',
     price: 2800,
-    image: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400&h=400&fit=crop',
+    image: minoxidil,
     images: [
-      'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&h=800&fit=crop',
+      minoxidil,
     ],
     description: 'Clinically proven hair regrowth treatment for men.',
     fullDescription: 'Rogaine Minoxidil 5% is FDA-approved and clinically proven to regrow hair.',
@@ -1230,9 +1280,9 @@ export const products: Product[] = [
     category: 'personal-care',
     subcategory: 'hair-care',
     price: 850,
-    image: 'https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?w=400&h=400&fit=crop',
+    image: ogxArgan,
     images: [
-      'https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?w=800&h=800&fit=crop',
+      ogxArgan,
     ],
     description: 'Renewing shampoo with argan oil for silky, soft hair.',
     fullDescription: 'OGX Argan Oil Shampoo moisturizes with cold pressed argan oil and silk proteins.',
@@ -1253,9 +1303,9 @@ export const products: Product[] = [
     category: 'wellness',
     subcategory: 'mental-wellness',
     price: 750,
-    image: 'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=400&fit=crop',
+    image: lavenderOil,
     images: [
-      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&h=800&fit=crop',
+      lavenderOil,
     ],
     description: 'Pure lavender essential oil for relaxation and calm.',
     fullDescription: 'NOW Lavender Essential Oil is 100% pure and steam distilled for calming aromatherapy.',
@@ -1275,9 +1325,9 @@ export const products: Product[] = [
     category: 'wellness',
     subcategory: 'sleep-aids',
     price: 680,
-    image: 'https://images.unsplash.com/photo-1559839914-17aae19cec71?w=400&h=400&fit=crop',
+    image: melatonin,
     images: [
-      'https://images.unsplash.com/photo-1559839914-17aae19cec71?w=800&h=800&fit=crop',
+      melatonin,
     ],
     description: 'Drug-free sleep aid to help you fall asleep faster.',
     fullDescription: 'Natrol Melatonin helps establish normal sleep patterns. 100% drug-free.',
@@ -1299,9 +1349,9 @@ export const products: Product[] = [
     category: 'sexual-health',
     subcategory: 'condoms',
     price: 450,
-    image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&h=400&fit=crop',
+    image: durexExtraSafe,
     images: [
-      'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&h=800&fit=crop',
+      durexExtraSafe,
     ],
     description: 'Extra thick and lubricated condoms for added safety.',
     fullDescription: 'Durex Extra Safe condoms are thicker and extra lubricated for enhanced protection.',
@@ -1320,9 +1370,9 @@ export const products: Product[] = [
     category: 'sexual-health',
     subcategory: 'pregnancy-ovulation',
     price: 850,
-    image: 'https://images.unsplash.com/photo-1559839914-17aae19cec71?w=400&h=400&fit=crop',
+    image: clearblueTest,
     images: [
-      'https://images.unsplash.com/photo-1559839914-17aae19cec71?w=800&h=800&fit=crop',
+      clearblueTest,
     ],
     description: 'Digital pregnancy test with clear results in 3 minutes.',
     fullDescription: 'Clearblue Digital Pregnancy Test gives you a clear answer with over 99% accuracy.',
@@ -1342,9 +1392,9 @@ export const products: Product[] = [
     category: 'eye-ear-dental',
     subcategory: 'eye-care',
     price: 980,
-    image: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=400&h=400&fit=crop',
+    image: systaneUltra,
     images: [
-      'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&h=800&fit=crop',
+      systaneUltra,
     ],
     description: 'Lubricant eye drops for dry eye relief.',
     fullDescription: 'Systane Ultra provides extended relief for dry, irritated eyes.',
@@ -1364,9 +1414,9 @@ export const products: Product[] = [
     category: 'eye-ear-dental',
     subcategory: 'ear-care',
     price: 650,
-    image: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=400&h=400&fit=crop',
+    image: otexEar,
     images: [
-      'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&h=800&fit=crop',
+      otexEar,
     ],
     description: 'Ear drops for earwax removal.',
     fullDescription: 'Otex Ear Drops help soften and remove earwax buildup.',
@@ -1385,9 +1435,9 @@ export const products: Product[] = [
     category: 'eye-ear-dental',
     subcategory: 'dental-pain',
     price: 520,
-    image: 'https://images.unsplash.com/photo-1628359355624-855c45d77d96?w=400&h=400&fit=crop',
+    image: orajel,
     images: [
-      'https://images.unsplash.com/photo-1628359355624-855c45d77d96?w=800&h=800&fit=crop',
+      orajel,
     ],
     description: 'Instant relief gel for toothaches and gum pain.',
     fullDescription: 'Orajel provides fast, effective relief from toothache and oral pain.',
@@ -1409,9 +1459,9 @@ export const products: Product[] = [
     category: 'health-conditions',
     subcategory: 'diabetes-care',
     price: 380,
-    image: 'https://images.unsplash.com/photo-1550572017-edd951b55104?w=400&h=400&fit=crop',
+    image: metformin,
     images: [
-      'https://images.unsplash.com/photo-1550572017-edd951b55104?w=800&h=800&fit=crop',
+      metformin,
     ],
     description: 'Oral diabetes medicine to control blood sugar levels.',
     fullDescription: 'Metformin helps control blood sugar levels in type 2 diabetes.',
@@ -1432,9 +1482,9 @@ export const products: Product[] = [
     category: 'health-conditions',
     subcategory: 'hypertension-care',
     price: 320,
-    image: 'https://images.unsplash.com/photo-1550572017-edd951b55104?w=400&h=400&fit=crop',
+    image: amlodipine,
     images: [
-      'https://images.unsplash.com/photo-1550572017-edd951b55104?w=800&h=800&fit=crop',
+      amlodipine,
     ],
     description: 'Calcium channel blocker for high blood pressure.',
     fullDescription: 'Amlodipine is used to treat high blood pressure and prevent chest pain.',
@@ -1455,9 +1505,9 @@ export const products: Product[] = [
     category: 'health-conditions',
     subcategory: 'asthma-care',
     price: 850,
-    image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&h=400&fit=crop',
+    image: salbutamol,
     images: [
-      'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&h=800&fit=crop',
+      salbutamol,
     ],
     description: 'Quick-relief inhaler for asthma symptoms.',
     fullDescription: 'Ventolin Inhaler provides fast relief from asthma symptoms and bronchospasm.',
@@ -1478,9 +1528,9 @@ export const products: Product[] = [
     category: 'offers',
     subcategory: 'essentials',
     price: 2500,
-    image: 'https://images.unsplash.com/photo-1603398938378-e54eab446dde?w=400&h=400&fit=crop',
+    image: firstAidKit,
     images: [
-      'https://images.unsplash.com/photo-1603398938378-e54eab446dde?w=800&h=800&fit=crop',
+      firstAidKit,
     ],
     description: 'Complete first aid kit with 100+ essential items.',
     fullDescription: 'Comprehensive first aid kit containing bandages, antiseptics, and emergency supplies.',
@@ -1499,9 +1549,9 @@ export const products: Product[] = [
     category: 'offers',
     subcategory: 'essentials',
     price: 450,
-    image: 'https://images.unsplash.com/photo-1584483720412-ce931f4aefa8?w=400&h=400&fit=crop',
+    image: dettolSanitizer,
     images: [
-      'https://images.unsplash.com/photo-1584483720412-ce931f4aefa8?w=800&h=800&fit=crop',
+      dettolSanitizer,
     ],
     description: '70% alcohol hand sanitizer that kills 99.9% of germs.',
     fullDescription: 'Dettol Hand Sanitizer provides effective germ protection on the go.',
