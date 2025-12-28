@@ -26,9 +26,9 @@ const Contact = () => {
           <div>
             <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
             <div className="space-y-4 mb-8">
-              <div className="flex items-center gap-4"><Phone className="h-5 w-5 text-primary" /><span>+254 700 123 456</span></div>
+              <div className="flex items-center gap-4"><Phone className="h-5 w-5 text-primary" /><span>0114542511</span></div>
               <div className="flex items-center gap-4"><Mail className="h-5 w-5 text-primary" /><span>info@sirapharmacy.co.ke</span></div>
-              <div className="flex items-center gap-4"><MapPin className="h-5 w-5 text-primary" /><span>123 Westlands Road, Nairobi</span></div>
+              <div className="flex items-center gap-4"><MapPin className="h-5 w-5 text-primary" /><span>Two Rivers & Thindigua, Nairobi</span></div>
               <div className="flex items-center gap-4"><Clock className="h-5 w-5 text-primary" /><span>Mon - Sat: 8AM - 9PM</span></div>
             </div>
           </div>
